@@ -45,7 +45,7 @@ body {
 }
 
 #area-label {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 h1 {
@@ -70,4 +70,37 @@ input {
 h2 {
   margin-top: 30px;
   font-size: 21px;
+}
+
+/* Checkbox layout */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    border: 2px solid #b0b7c3;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Checked state */
+input[type="checkbox"]:checked {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+
+
+/* Hover effect */
+input[type="checkbox"]:hover {
+    border-color: #2563eb;
 }
