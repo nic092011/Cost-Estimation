@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="calculator">
+        <h1>Cost Estimator</h1>
+        <p>Calculate an estimated job cost from tiles to colourbond.</p>
+
+        <div class="row" id="area-row">
+            <div class="col-3">
+                <label for="length">Length (m)</label>
+                <input type="text" id="length" value="20" min="1">
+            </div>
+            <div class="col-3">
+                <label for="width">Width (m)</label>
+                <input type="text" id="width" value="20" min="1">
+            </div>
+        </div>
+
+        <div class="row" id="inso-row">
+            <div class="col-3">
+                <label>
+                    Insulation (Recommended)
+                    <input type="checkbox" id="inso" checked>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <label>
+                    Gutter Replacement
+                    <input type="checkbox" id="gutter">
+                </label>
+            </div>
+        </div>
+
+        <label for="story" id="story-label">Stories (Height)</label>
+        <div class="row" id="story-row">
+            <div class="col-3">
+                <label>
+                    <input type="radio" name="story" id="story1" checked>
+                    Single
+                </label>
+            </div>
+
+            <div class="col-3">
+                <label>
+                    <input type="radio" name="story" id="story2">
+                    Double
+                </label>
+            </div>
+        </div>
+
+
+
+
+
+        
+        <label id="area-label">Estimated Area: <span id="area">480</span>m<sup>2</sup> </label>
+        <h2>Estimated total: $<span id="total">8500.00</span></h2>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
